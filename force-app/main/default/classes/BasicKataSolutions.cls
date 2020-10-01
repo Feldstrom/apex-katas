@@ -1,5 +1,7 @@
-public  class BasicApexKata {
+public class BasicKataSolutions {
+    public BasicKataSolutions() {
 
+    }
     //if and boolean katas
     public static String returnFalseIfTrue(Boolean bool){
         String trueStr  = ('True');
@@ -87,6 +89,4 @@ public  class BasicApexKata {
             return str;
         }
     }
-
 }
-

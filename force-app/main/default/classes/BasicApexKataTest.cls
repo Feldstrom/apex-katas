@@ -124,5 +124,21 @@ public class BasicApexKataTest {
         Boolean result3 = BasicApexKata.returnBooleanIfContainsOnly(str3);
         System.assertEquals(false, result3, '3 Should return boolean: true');
     }
+    @IsTest
+    private static void shouldReturnStrNoSpaces(){
+        String str1 = 'Abc ';
+        String str2 = ' Abc ';
+        String str3 = 'Abc d ';
+        String str4 = 'a b c d';
+
+        String result1 = BasicApexKata.returnStrNoSpaces(str1);
+        System.assertEquals(true, result1.containsNone(' '));
+        String result2 = BasicApexKata.returnStrNoSpaces(str2);
+        System.assertEquals(true, result2.containsNone(' '));
+        String result3 = BasicApexKata.returnStrNoSpaces(str3);
+        System.assertEquals(true, result3.containsNone(' '));
+        String result4 = BasicApexKata.returnStrNoSpaces(str4);
+        System.assertEquals(true, result4.containsNone(' '));
+    }
 
 }
