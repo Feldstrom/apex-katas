@@ -1,5 +1,7 @@
 @IsTest
 public class BasicApexKataTest {
+//Author:Kody.Hungenberg@gmail.com
+//
 
     //Boolean handling & conversion
     @IsTest

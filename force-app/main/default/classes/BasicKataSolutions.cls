@@ -1,4 +1,7 @@
 public class BasicKataSolutions {
+//Author:Kody.Hungenberg@gmail.com
+//
+
     public BasicKataSolutions() {
 
     }
