@@ -1,12 +1,12 @@
 public  class BasicApexKata {
 
     //if and boolean katas
-    public static String returnFalseIfTrue(Boolean bool){
+    public static String returnFalseStrIfTrue(Boolean bool){
         //Todo: If bool is true, return 'results' as a String with the value of 'True'
         String result;
         return result;
     }
-    public static String returnTrueIfFalse(Boolean bool){
+    public static String returnTrueStrIfFalse(Boolean bool){
         //Todo: If 'bool' is false, return 'results' as a String with a value of 'True'
         String result;
         return result;

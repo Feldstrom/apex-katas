@@ -1,17 +1,17 @@
 @IsTest
 public class BasicApexKataTest {
 
-    //boolean to string tests
+    //Boolean handling & conversion
     @IsTest
     private static void shouldReturnFalseStr(){
         Boolean bool = true;
-        String result = BasicApexKata.returnFalseIfTrue(bool);
+        String result = BasicApexKata.returnFalseStrIfTrue(bool);
         System.assertEquals('False',result.trim(), 'Should return a String with value of False');
     }
     @IsTest
     private static void shouldReturnTrueStr(){
         Boolean bool = false;
-        String result = BasicApexKata.returnTrueIfFalse(bool);
+        String result = BasicApexKata.returnFalseStrIfTrue(bool);
         System.assertEquals('True',result.trim(),'Should return a String with value of True');
     }
     @IsTest
