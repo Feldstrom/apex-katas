@@ -15,13 +15,13 @@ public class BasicApexKataTest {
         System.assertEquals('True',result.trim(),'Should return a String with value of True');
     }
     @IsTest
-    private static void shouldReturnTrueIfTrue(){
+    private static void shouldReturnFalseIfTrue(){
         Boolean bool1 = false;
         Boolean bool2 = true;
-        Boolean result1 = BasicApexKata.returnTrueIfTrue(bool1);
-        System.assertEquals(false, result1, 'Should return a value of true if value is true and false if false');
-        Boolean result2 = BasicApexKata.returnTrueIfTrue(bool2);
-        System.assertEquals(true, result2, 'Should return a value of true if value is true and false if false');
+        Boolean result1 = BasicApexKata.returnFalseIfTrue(bool1);
+        System.assertEquals(true, result1, 'Should return a value of false if value is true and true if false');
+        Boolean result2 = BasicApexKata.returnFalseIfTrue(bool2);
+        System.assertEquals(false, result2, 'Should return a value of false if value is true and true if false');
 
     }
     //string handling tests
@@ -39,7 +39,8 @@ public class BasicApexKataTest {
     }
     @IsTest
     private static void shouldCheckAndReturnAllUpper(){
-        //method should check if a string is all uppercase, if true return, if false convert to all upper
+        //method should check if a string is all lowercase, if true return that string,
+        //if false convert to all upper and return
         List<String> strList = new List<String>{'AaBBcc','AABBCc','AABBCC','aabbcc'};
         for(String r : strList){
             String result = BasicApexKata.checkAndReturnAllUpper(r);
@@ -48,10 +49,11 @@ public class BasicApexKataTest {
     }
     @IsTest
     private static void shouldCheckAndReturnAllLower(){
-        //method should check if a string is all uppercase, if true return, if false convert to all upper
+        //method should check if a string is all uppercase, if true return that string,
+        //if false convert to all upper and return
         List<String> strList = new List<String>{'AaBBcc','AABBCc','AABBCC','aabbcc'};
         for(String r : strList){
-            String result = BasicApexKata.checkAndReturnAllUpper(r);
+            String result = BasicApexKata.checkAndReturnAllLower(r);
             System.assert(result.isAllLowerCase());
         }
     }
