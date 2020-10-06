@@ -169,6 +169,19 @@ public class ApexKataTest {
         Boolean returnedBool3 = ApexKata.returnTrueIfSameDate(d3);
         System.assertEquals(true, returnedBool3);
     }
+    @IsTest
+    private static void shouldReturnDayInteger(){
+        Date d1 = date.newInstance(2010, 1, 1);
+        Date d2 = date.newInstance(2010, 5, 15);
+        Date d3 = date.newInstance(2010, 6, 26);
+
+        Integer returnedInt1 = ApexKata.returnDayInteger(d1);
+        System.assertEquals(1, returnedInt1);
+        Integer returnedInt2 = ApexKata.returnDayInteger(d2);
+        System.assertEquals(15, returnedInt2);
+        Integer returnedInt3 = ApexKata.returnDayInteger(d3);
+        System.assertEquals(26, returnedInt3);
+    }
 
     @IsTest
     private static void shouldReturnMonthInteger(){

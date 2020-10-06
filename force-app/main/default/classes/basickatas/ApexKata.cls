@@ -97,6 +97,9 @@ public class ApexKata {
         //check the date above against d and return true if its the exact same date
         return checkedDate;
     }
+    public static Integer returnDayInteger(Date d){
+        return dayInt;
+    }
     public static Integer returnMonthInteger(Date d){
         //return the month of a date passed
         return dateInt; 

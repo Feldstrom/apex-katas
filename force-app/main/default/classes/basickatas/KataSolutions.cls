@@ -108,6 +108,10 @@ public class KataSolutions {
         Boolean checkedDate = checkThisDate.isSameDay(d);
         return checkedDate;
     }
+    public static Integer returnDayInteger(Date d){
+        Integer dayInt = d.day();
+        return dayInt;
+    }
     public static Integer returnMonthInteger(Date d){
         Integer dateInt = d.month();
         return dateInt; 
