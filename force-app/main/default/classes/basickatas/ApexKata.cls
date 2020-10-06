@@ -1,6 +1,6 @@
-public  class BasicApexKata {
 //Author:Kody.Hungenberg@gmail.com
-//
+public class ApexKata {
+
     //if and boolean katas
     public static String returnFalseStrIfTrue(Boolean bool){
         //Todo: If bool is true, return 'results' as a String with the value of 'True'
