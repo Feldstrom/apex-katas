@@ -196,7 +196,19 @@ public class ApexKataTest {
         Integer returnedInt3 = ApexKata.returnMonthInteger(d3);
         System.assertEquals(6, returnedInt3);
     }
+    @IsTest
+    private static void shouldReturnYearInteger(){
+        Date d1 = date.newInstance(2010, 1, 15);
+        Date d2 = date.newInstance(2011, 5, 15);
+        Date d3 = date.newInstance(2013, 6, 15);
 
+        Integer returnedInt1 = KataSolutions.returnYearInteger(d1);
+        System.assertEquals(2010, returnedInt1);
+        Integer returnedInt2 = KataSolutions.returnYearInteger(d2);
+        System.assertEquals(2011, returnedInt2);
+        Integer returnedInt3 = KataSolutions.returnYearInteger(d3);
+        System.assertEquals(2013, returnedInt3);
+    }
     @IsTest
     private static void shouldReturnMonthsBetweenDates(){
         Date d1 = date.newInstance(2010, 1, 15);
@@ -219,5 +231,13 @@ public class ApexKataTest {
         Date returnedDate = ApexKata.returnDateFromString(stringDate);
         System.assertEquals(expectedDate, returnedDate);
     }
+
+    //write katas for 
+    //toStartOfMonth()
+    //toStartOfWeek()
+    //valueOf(stringDate)
+    //valueOf(fieldValue)
+
+    //write date time katas
 
 }

@@ -116,6 +116,10 @@ public class KataSolutions {
         Integer dateInt = d.month();
         return dateInt; 
     }
+    public static Integer returnYearInteger(Date d){
+        Integer dateInt = d.year();
+        return dateInt; 
+    }
     public static Integer returnMonthsBetweenDates(Date d){
         Date checkThisDate = date.newInstance(2010, 1, 15);
 

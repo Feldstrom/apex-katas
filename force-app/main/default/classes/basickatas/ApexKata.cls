@@ -98,10 +98,15 @@ public class ApexKata {
         return checkedDate;
     }
     public static Integer returnDayInteger(Date d){
+        //return the day of the date passed as an Integer
         return dayInt;
     }
     public static Integer returnMonthInteger(Date d){
-        //return the month of a date passed
+        //return the month of a date passed as an Integer
+        return dateInt; 
+    }
+    public static Integer returnYearInteger(Date d){
+        //return the year of the date passed as an Integer
         return dateInt; 
     }
     public static Integer returnMonthsBetweenDates(Date d){
