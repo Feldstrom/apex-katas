@@ -88,6 +88,7 @@ public class KataSolutions {
             return str;
         }
     }
+    //date katas
 
     public static Date addTenDaysToDate(Date d){
         Date returnDate = d.addDays(10);

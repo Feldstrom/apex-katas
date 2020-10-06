@@ -78,6 +78,40 @@ public class ApexKata {
 
         return result;
     }
+    //date katas
+
+    public static Date addTenDaysToDate(Date d){
+       //take d and add 10 days to it, then return the new date 
+        return returnDate;
+    }
+    public static Date addTwoMonthsToDate(Date d){
+       //take d and add 2 months to it, then return the new date 
+        return returnDate;
+    }
+    public static Date addTwoYearsToDate(Date d){
+       //take d and add 2 years to it, then return the new date 
+        return returnDate;
+    }
+    public static Boolean returnTrueIfSameDate(Date d){
+        Date checkThisDate = date.newInstance(2010, 1, 20);
+        //check the date above against d and return true if its the exact same date
+        return checkedDate;
+    }
+    public static Integer returnMonthInteger(Date d){
+        //return the month of a date passed
+        return dateInt; 
+    }
+    public static Integer returnMonthsBetweenDates(Date d){
+        Date checkThisDate = date.newInstance(2010, 1, 15);
+        //check the date above against d and return the difference between them
+
+        return checkedDate;
+    }
+
+    public static Date returnDateFromString(String str){
+ 
+        return returnDate;
+    }
     
 }
 

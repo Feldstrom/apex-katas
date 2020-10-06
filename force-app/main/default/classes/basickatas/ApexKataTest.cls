@@ -137,7 +137,7 @@ public class ApexKataTest {
         Date d = date.newInstance(2010, 1, 15);
         Date expectedDate = date.newInstance(2010, 1, 25);
 
-        Date returnDate = KataSolutions.addTenDaysToDate(d);
+        Date returnDate = ApexKata.addTenDaysToDate(d);
         System.assertEquals(expectedDate, returnDate);
     }
     @IsTest
@@ -145,7 +145,7 @@ public class ApexKataTest {
         Date d = date.newInstance(2010, 1, 15);
         Date expectedDate = date.newInstance(2010, 3, 15);
 
-        Date returnDate = KataSolutions.addTwoMonthsToDate(d);
+        Date returnDate = ApexKata.addTwoMonthsToDate(d);
         System.assertEquals(expectedDate, returnDate);
     }
     @IsTest
@@ -153,7 +153,7 @@ public class ApexKataTest {
         Date d = date.newInstance(2010, 1, 15);
         Date expectedDate = date.newInstance(2012, 1, 15);
 
-        Date returnDate = KataSolutions.addTwoYearsToDate(d);
+        Date returnDate = ApexKata.addTwoYearsToDate(d);
         System.assertEquals(expectedDate, returnDate);
     }
     @IsTest
@@ -162,11 +162,11 @@ public class ApexKataTest {
         Date d2 = date.newInstance(2010, 1, 5);
         Date d3 = date.newInstance(2010, 1, 20);
 
-        Boolean returnedBool1 = KataSolutions.returnTrueIfSameDate(d1);
+        Boolean returnedBool1 = ApexKata.returnTrueIfSameDate(d1);
         System.assertEquals(false, returnedBool1);
-        Boolean returnedBool2 = KataSolutions.returnTrueIfSameDate(d2);
+        Boolean returnedBool2 = ApexKata.returnTrueIfSameDate(d2);
         System.assertEquals(false, returnedBool2);
-        Boolean returnedBool3 = KataSolutions.returnTrueIfSameDate(d3);
+        Boolean returnedBool3 = ApexKata.returnTrueIfSameDate(d3);
         System.assertEquals(true, returnedBool3);
     }
 
@@ -176,11 +176,11 @@ public class ApexKataTest {
         Date d2 = date.newInstance(2010, 5, 15);
         Date d3 = date.newInstance(2010, 6, 15);
 
-        Integer returnedInt1 = KataSolutions.returnMonthInteger(d1);
+        Integer returnedInt1 = ApexKata.returnMonthInteger(d1);
         System.assertEquals(1, returnedInt1);
-        Integer returnedInt2 = KataSolutions.returnMonthInteger(d2);
+        Integer returnedInt2 = ApexKata.returnMonthInteger(d2);
         System.assertEquals(5, returnedInt2);
-        Integer returnedInt3 = KataSolutions.returnMonthInteger(d3);
+        Integer returnedInt3 = ApexKata.returnMonthInteger(d3);
         System.assertEquals(6, returnedInt3);
     }
 
@@ -190,11 +190,11 @@ public class ApexKataTest {
         Date d2 = date.newInstance(2010, 5, 15);
         Date d3 = date.newInstance(2010, 6, 15);
 
-        Integer returnedInt1 = KataSolutions.returnMonthsBetweenDates(d1);
+        Integer returnedInt1 = ApexKata.returnMonthsBetweenDates(d1);
         System.assertEquals(0, returnedInt1);
-        Integer returnedInt2 = KataSolutions.returnMonthsBetweenDates(d2);
+        Integer returnedInt2 = ApexKata.returnMonthsBetweenDates(d2);
         System.assertEquals(4, returnedInt2);
-        Integer returnedInt3 = KataSolutions.returnMonthsBetweenDates(d3);
+        Integer returnedInt3 = ApexKata.returnMonthsBetweenDates(d3);
         System.assertEquals(5, returnedInt3);
     }
 
@@ -203,7 +203,7 @@ public class ApexKataTest {
         String stringDate = '01/15/2010';
         Date expectedDate = date.newInstance(2010, 1, 15);
 
-        Date returnedDate = KataSolutions.returnDateFromString(stringDate);
+        Date returnedDate = ApexKata.returnDateFromString(stringDate);
         System.assertEquals(expectedDate, returnedDate);
     }
 
